@@ -1,8 +1,0 @@
-/RetailInventorySystem
-│
-├── main.cpp
-├── Product.h
-├── Product.cpp
-├── Inventory.h
-├── Inventory.cpp
-├── README.md
