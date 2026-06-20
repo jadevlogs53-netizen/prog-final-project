@@ -1,26 +1,43 @@
 #include <iostream>
 
-#include "product.h"
-#include "inventory.h"
-#include "order.h"
-#include "filehandling.h"
+#include "../include/product.h"
+#include "../include/inventory.h"
+#include "../include/order.h"
+#include "../include/filehandling.h"
 
 using namespace std;
 
 int main()
 {
+    loadData();
+
+    if(products.empty())
+    {
+        initializeProducts();
+    }
+
     int choice;
 
     do
     {
-        cout << "\n=== Retail Inventory System ===\n";
-        cout << "1. Product Management\n";
-        cout << "2. Inventory\n";
-        cout << "3. Order\n";
-        cout << "4. Save Data\n";
-        cout << "5. Exit\n";
-        cout << "Choice: ";
+        cout << "\n========================================";
+        cout << "\n PERFUME RETAIL INVENTORY SYSTEM";
+        cout << "\n========================================";
+        cout << "\n1. Product Management";
+        cout << "\n2. Inventory Management";
+        cout << "\n3. Customer Orders";
+        cout << "\n4. Save Data";
+        cout << "\n5. Exit";
+        cout << "\nEnter Choice: ";
         cin >> choice;
+
+        while(cin.fail())
+        {
+            cin.clear();
+            cin.ignore(1000,'\n');
+            cout << "Invalid input! Enter again: ";
+            cin >> choice;
+        }
 
         switch(choice)
         {
@@ -39,6 +56,15 @@ int main()
             case 4:
                 saveData();
                 break;
+
+            case 5:
+                saveData();
+                cout << "\nData saved successfully!";
+                cout << "\nThank you for using the system.\n";
+                break;
+
+            default:
+                cout << "\nInvalid Choice!";
         }
 
     } while(choice != 5);
