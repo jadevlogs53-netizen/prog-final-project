@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Retail Inventory",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "src/main.cpp",
+                "src/product.cpp",
+                "src/inventory.cpp",
+                "src/order.cpp",
+                "src/filehandling.cpp",
+                "-I",
+                "include",
+                "-o",
+                "src/output/main.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}   
