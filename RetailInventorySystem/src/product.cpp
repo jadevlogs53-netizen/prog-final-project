@@ -167,24 +167,39 @@ void productMenu()
 
     do
     {
-        cout << "\n========== PRODUCT MENU ==========";
-        cout << "\n1. Add Product";
-        cout << "\n2. Update Product";
-        cout << "\n3. Delete Product";
-        cout << "\n4. Search Product";
-        cout << "\n5. View All Products";
-        cout << "\n6. Back";
-        cout << "\nChoice: ";
+        cout << "\n===== PRODUCT MENU =====\n";
+        cout << "1. Add Product\n";
+        cout << "2. View Products\n";
+        cout << "3. Search Product\n";
+        cout << "4. Update Product\n";
+        cout << "5. Delete Product\n";
+        cout << "0. Back\n";
+        cout << "Choice: ";
         cin >> choice;
+
 
         switch(choice)
         {
-            case 1: addProduct(); break;
-            case 2: updateProduct(); break;
-            case 3: deleteProduct(); break;
-            case 4: searchProduct(); break;
-            case 5: viewAllProducts(); break;
+            case 1:
+                addProduct();
+                break;
+
+            case 2:
+                viewAllProducts();
+                break;
+
+            case 3:
+                searchProduct();
+                break;
+
+            case 4:
+                updateProduct();
+                break;
+
+            case 5:
+                deleteProduct();
+                break;
         }
 
-    } while(choice != 6);
+    }while(choice != 0);
 }
