@@ -1,0 +1,30 @@
+1|M001|Dior Sauvage Parfum|Men|7500|20
+2|M002|Chanel Bleu de Chanel EDT|Men|7200|20
+3|M003|Saint Laurent YSL Y EDP Intense|Men|6900|20
+4|M004|Versace Eros|Men|4500|20
+5|M005|Acqua di Gio Profumo|Men|5800|20
+6|M006|Afnan 9PM|Men|2500|20
+7|M007|Lattafa Khamrah|Men|2800|20
+8|M008|Versace Dylan Blue|Men|4200|20
+9|M009|Prada L'Homme|Men|6500|20
+10|M010|Tom Ford Oud Wood|Men|12000|20
+11|M011|Creed Aventus|Men|18000|20
+12|M012|Jean Paul Gaultier Le Male Elixir|Men|6500|20
+13|M013|Montblanc Explorer|Men|3500|20
+14|M014|Bvlgari Man in Black|Men|5500|20
+15|M015|Clinique Happy for Men|Men|3200|20
+16|W001|Chanel Coco Mademoiselle|Women|7800|20
+17|W002|Libre Eau de Parfum Yves Saint Laurent|Women|7000|20
+18|W003|Good Girl|Women|6500|20
+19|W004|La Vie Est Belle|Women|6800|20
+20|W005|Dior J'adore Eau de Parfum|Women|7500|20
+21|W006|Miss Dior|Women|7200|20
+22|W007|YSL Black Opium|Women|6900|20
+23|W008|Baccarat Rouge 540|Women|18000|20
+24|W009|Valentino Donna Born in Roma|Women|6500|20
+25|W010|Burberry Her|Women|6200|20
+26|W011|Delina|Women|15000|20
+27|W012|Cloud|Women|4500|20
+28|W013|Mon Paris|Women|6800|20
+29|W014|Eilish No. 2|Women|5200|20
+30|W015|Chance Eau Tendre|Women|7500|20

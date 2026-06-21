@@ -1,4 +1,15 @@
 #include "../include/product.h"
+#include <iomanip>
+
+string shorten(string text, int length)
+{
+    if(text.length() > length)
+    {
+        return text.substr(0, length - 3) + "...";
+    }
+
+    return text;
+}
 
 vector<Product> products;
 
@@ -145,20 +156,41 @@ void searchProduct()
 
 void viewAllProducts()
 {
-    cout << "\n====================================================================";
-    cout << "\nID\tCODE\tPRODUCT\t\t\t\tPRICE\tSTOCK";
-    cout << "\n====================================================================";
+    cout << "\n==========================================================================\n";
 
-    for(auto p : products)
+    cout << left
+         << setw(5)  << "ID"
+         << setw(10) << "CODE"
+         << setw(30) << "PRODUCT"
+         << setw(15) << "PRICE"
+         << setw(10) << "STOCK"
+         << endl;
+
+    cout << "==========================================================================\n";
+
+
+    for(Product p : products)
     {
-        cout << "\n" << p.id
-             << "\t" << p.code
-             << "\t" << p.name
-             << "\tPHP " << p.price
-             << "\t" << p.stock;
+        string productName = p.name;
+
+        // putol kapag sobrang haba
+        if(productName.length() > 27)
+        {
+            productName = productName.substr(0,27) + "...";
+        }
+
+
+        cout << left
+             << setw(5)  << p.id
+             << setw(10) << p.code
+             << setw(30) << shorten(p.name, 27)
+             << setw(15) << ("PHP " + to_string((int)p.price))
+             << setw(10) << p.stock
+             << endl;
     }
 
-    cout << "\n====================================================================\n";
+
+    cout << "==========================================================================\n";
 }
 
 void productMenu()
