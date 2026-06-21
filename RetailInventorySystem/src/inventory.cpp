@@ -67,6 +67,32 @@ void updateStock()
     cout << "\nProduct Not Found!";
 }
 
+void lowStockReport()
+{
+    cout << "\nLOW STOCK PRODUCTS";
+    cout << "\n------------------";
+
+    bool found = false;
+
+    for(const auto& product : products)
+    {
+        if(product.stock < 5)
+        {
+            cout << "\nID: " << product.id;
+            cout << "\nName: " << product.name;
+            cout << "\nStock: " << product.stock;
+            cout << "\n------------------";
+
+            found = true;
+        }
+    }
+
+    if(!found)
+    {
+        cout << "\nNo low stock products found.";
+    }
+}
+
 void inventoryMenu()
 {
     int choice;

@@ -10,5 +10,6 @@ void inventoryMenu();
 void displayInventory();
 void checkStock();
 void updateStock();
+void lowStockReport();
 
 #endif

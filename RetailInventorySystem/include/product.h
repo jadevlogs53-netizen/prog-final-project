@@ -11,7 +11,6 @@ using namespace std;
 struct Product
 {
     int id;
-    string code;
     string name;
     string category;
     double price;

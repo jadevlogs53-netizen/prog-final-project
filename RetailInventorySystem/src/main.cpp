@@ -26,8 +26,9 @@ int main()
         cout << "\n1. Product Management";
         cout << "\n2. Inventory Management";
         cout << "\n3. Customer Orders";
-        cout << "\n4. Save Data";
-        cout << "\n5. Exit";
+        cout << "\n4. Low Stock Report";
+        cout << "\n5. Save Data";
+        cout << "\n6. Exit";
         cout << "\nEnter Choice: ";
         cin >> choice;
 
@@ -54,20 +55,24 @@ int main()
                 break;
 
             case 4:
-                saveData();
+                lowStockReport();
                 break;
 
             case 5:
                 saveData();
-                cout << "\nData saved successfully!";
-                cout << "\nThank you for using the system.\n";
+            cout << "\nData saved successfully!";
                 break;
 
-            default:
-                cout << "\nInvalid Choice!";
+            case 6:
+                saveData();
+            cout << "\nThank you for using the system.\n";
+                break;
+
+                default:
+            cout << "\nInvalid Choice!";
         }
 
-    } while(choice != 5);
+    } while(choice != 6);
 
     return 0;
 }
